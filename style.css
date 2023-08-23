@@ -1,0 +1,17 @@
+body {
+    background-color: #ECEAEC;
+}
+
+h1 {
+    color: #28A1CC;
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+}
+
+#theList {
+    color: #395F7F;
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+}

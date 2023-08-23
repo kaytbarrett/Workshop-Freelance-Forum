@@ -9,19 +9,30 @@ const users = [
     { name: "Robert", age: 72, occupation: "driver" },
 ];
 
+const test = [
+    
+]
+
 function main() {
-     const root = document.getElementById("root");
 
-     const h1 = document.createElement("h1")
-     h1.innerHTML = "FREELANCERS";
+    const h1 = document.createElement("h1")
+    h1.innerHTML = "FREELANCERS";
 
-     root.appendChild(h1);
+    root.appendChild(h1);
 
-     const ul = document.createElement("ul");
+    const ul = document.createElement("ul");
+    ul.setAttribute(`id`, `theList`);
 
+    for (let i = 0; i <= users.length - 1; i++) {
 
+        const li = document.createElement("li");
+        li.innerHTML = `${users[i].name}, ${users[i].age}, ${users[i].occupation}`;
+        ul.appendChild(li);
+
+    }
+
+    root.appendChild(ul);
 }
-
 
 
 //call the main function
